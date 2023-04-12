@@ -1,0 +1,76 @@
+body {
+    background: rgb(32,0,77);
+background: linear-gradient(90deg, rgba(32,0,77,1) 5%, rgba(56,8,140,1) 25%, rgba(168,33,163,1) 50%, rgba(249,255,0,1) 75%, rgba(195,112,16,1) 95%);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    /* Style the header */
+    header {
+      background-color: rgb(73, 73, 73);
+      padding: 30px;
+      text-align: center;
+      font-size: 35px;
+      color: white;
+   font-family:serif;
+    
+  }
+    
+    /* Create two columns/boxes that floats next to each other */
+    nav {
+      float: left;
+      width: 30%;
+      height: 300px; /* only for demonstration, should be removed */
+      background: rgb(153, 153, 153);
+      padding: 20px;
+      border-style: solid;
+      border-color: rgb(0, 0, 0);
+    }
+    
+    /* Style the list inside the menu */
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+     
+    }
+    
+    article {
+      float: left;
+      padding: 20px;
+      width: 70%;
+      background-color: hwb(290 11% 27%);
+      height: 300px; /* only for demonstration, should be removed */
+      border-style: solid;
+      border-color: rgb(0, 0, 0);
+    }
+    
+    /* Clear floats after the columns */
+    section::after {
+      content: "";
+      display: table;
+      clear: both;
+
+    }
+    
+    /* Style the footer */
+    footer {
+      background-color: rgb(73, 73, 73);
+      padding: 10px;
+      text-align: center;
+      border-style: solid;
+      border-color: rgb(0, 0, 0);   color: white;
+   
+    }
+    
+    /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+    @media (max-width: 600px) {
+      nav, article {
+        width: 100%;
+        height: auto;
+        border-style: solid;
+        border-color: rgb(0, 0, 0);
+        
+    
+      }
+    }
+   
+    
